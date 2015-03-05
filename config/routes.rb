@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   resources :posts
   get 'services/hot_water', as: :hot_water
   get 'pages/contact', as: :contact

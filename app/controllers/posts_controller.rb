@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_filter :authorize_blogger!, :except => [:index, :show]
 
   # GET /posts
   # GET /posts.json
@@ -9,6 +9,12 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @post = Post.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @post }
+    end
   end
 
   # GET /posts/new
