@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
 
   devise_for :users
+
+  match 'posts/page/:page' => 'posts#index', via: [:get, :post]
   resources :posts
+
   get 'services/hot_water', as: :hot_water
   get 'pages/contact', as: :contact
 

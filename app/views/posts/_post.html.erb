@@ -1,0 +1,14 @@
+<div id="post-<%= post.id %>">
+  <h1 class="postTitle"><%= link_to post.title, post %></h1>
+  <p class="date"><small><%= readable_date(post.created_at) %> by No One</small></p>
+  <div class="post">
+    <%= post.image %>
+    <%= raw textilize(post.body) %>
+  </div>
+  <%- if user_signed_in? && current_user.is_blogger %>
+    <small>
+      <%= link_to 'Edit', edit_post_path(post) %> |
+      <%= link_to 'Destroy', post, :method => :delete %>
+    </small>
+  <%- end %>
+</div>
