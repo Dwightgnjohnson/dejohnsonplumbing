@@ -14,6 +14,10 @@ gem 'will_paginate'
 gem 'RedCloth'
 gem 'rails_12factor'
 
+group :development do
+  gem 'guard-livereload', require: false
+end
+
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
