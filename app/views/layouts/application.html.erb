@@ -2,17 +2,18 @@
 <html>
 <head>
   <title>DE Johnson Plumbing</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="msvalidate.01" content="19C39401C6081A6CCD86C54B73D549C9" />
   <meta name="google-site-verification" content="VOcIoi7SDFgqMY-00ypO7FqI6HJ-k_tskgxJxDgZkCo" />
+  <link href='http://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
+  <%= favicon_link_tag 'favicon.ico' %>
   <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.2/yeti/bootstrap.min.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
-
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  
 </head>
 <body>
   <div class="container">
@@ -35,15 +36,18 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><%= link_to 'Hot Water', hot_water_path %></li>
+            <li><a href="#">Kitchen Fixtures</a></li>
               <li class="divider"></li>
-            <li><a href="#">On-Deman Hot Water</a></li>
+            <li><%= link_to 'Water Heater Replacement & Repair', hot_water_path %></li>
               <li class="divider"></li>
-            <li><a href="#">Kitchen Repair</a></li>
+            <li><a href="#">On-Demand/Tankless Water Heater</a></li>
               <li class="divider"></li>
-            <li><a href="#">Bathroom Repair</a></li>
+            <li><a href="#">Bath Fixtures, Faucets & Toilets</a></li>
               <li class="divider"></li>
-            <li><a href="#">Remodeling</a></li>
+            <li><a href="#">Home Remodeling</a></li>
+              <li class="divider"></li>
+              <li><a href="#"><%= image_tag "http://www.solahart.com.au/images/layout/head/logo-top-2.png" %></a></li>
+
           </ul>
         </li>
         <li><%= link_to 'Posts', "/posts" %></li>
