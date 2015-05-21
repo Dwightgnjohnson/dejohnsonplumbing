@@ -20,9 +20,26 @@
  $brand-warning: #BD8075;
  $brand-danger: #d99952;
  $body-bg: #F5F5DC;
+ $red: #c0392b;
 
+ ul {
+  list-style-type: none;
+  list-style-position: outside;
+  list-style-image: none;
+ }
+.center {text-align: center;}
 .test {border:thin solid red;}
-h1,h2,h3,h4,h5,h6 {font-family: 'Archivo Black', sans-serif;color:#c0392b;}
-.navbar-default {background-color: #c0392b;}
+h1,h2,h3,h4,h5,h6 {font-family: 'Archivo Black', sans-serif;-webkit-text-stroke: 0px $gray-base;color: white;
+   text-shadow:
+       3px 3px 0 $red,
+     -1px -1px 0 $red,
+      1px -1px 0 $red,
+      -1px 1px 0 $red,
+       1px 1px 0 $red;}
+.navbar-default {background-color: $red;}
 .jumbotron h1, h2, h3, h4, h5, h6 {color:white;}
-.jumbotron {background-color:#c0392b;}
+.jumbotron {background-color:darken( $red, 0% );}
+.tagline {}
+ul.services_home li {background-color: $red;color:white;border:thick solid white;min-height:100px;padding:1.1em .5em;font-size:1.6em;}
+ul.services_home li img {max-height: 44px;background-color: white;}
+a:hover {background-color:white;color:$red;}
