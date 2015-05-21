@@ -40,6 +40,7 @@ h1,h2,h3,h4,h5,h6 {font-family: 'Archivo Black', sans-serif;-webkit-text-stroke:
 .jumbotron h1, h2, h3, h4, h5, h6 {color:white;}
 .jumbotron {background-color:darken( $red, 0% );}
 .tagline {}
-ul.services_home li {background-color: $red;color:white;border:thick solid white;min-height:100px;padding:1.1em .5em;font-size:1.6em;}
+ul.services_home {border:thin solid red;padding:0;margin:1em 0;}
+ul.services_home li {background-color: $red;color:white;border:thick solid white;min-height:100px;padding:1.5em .5em 0 .5em;font-size:1.6em;}
 ul.services_home li img {max-height: 44px;background-color: white;}
 a:hover {background-color:white;color:$red;}
