@@ -13,6 +13,7 @@ gem 'devise'
 gem 'will_paginate'
 gem 'RedCloth'
 gem 'rails_12factor'
+gem 'dynopoker'
 
 group :development do
   gem 'guard-livereload', require: false

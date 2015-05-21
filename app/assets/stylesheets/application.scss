@@ -20,9 +20,9 @@
  $brand-warning: #BD8075;
  $brand-danger: #d99952;
  $body-bg: #F5F5DC;
- 
+
 .test {border:thin solid red;}
 h1,h2,h3,h4,h5,h6 {font-family: 'Archivo Black', sans-serif;color:#c0392b;}
 .navbar-default {background-color: #c0392b;}
-.jumbotron h1 {color:white;}
+.jumbotron h1, h2, h3, h4, h5, h6 {color:white;}
 .jumbotron {background-color:#c0392b;}
